@@ -10,12 +10,17 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style14SemiBold(BuildContext context, {Color? color}) {
+  static TextStyle style14SemiBold(
+    BuildContext context, {
+    Color? color,
+    double? height,
+  }) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 14, context: context),
       color: color,
       fontWeight: FontWeight.w600, // Semi-bold
       fontFamily: 'Rubik',
+      height: height,
     );
   }
 

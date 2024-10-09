@@ -43,7 +43,7 @@ class SocietyHacksSection extends StatelessWidget {
           height: 19,
         ),
         const SizedBox(
-          height: 230,
+          height: 218,
           child: SocietyHacksListView(),
         ),
       ],

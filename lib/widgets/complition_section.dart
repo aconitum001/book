@@ -31,7 +31,7 @@ class ComplitionSection extends StatelessWidget {
         ),
         const ContinueReadingWidget(),
         const SizedBox(
-          height: 15,
+          height: 18,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(

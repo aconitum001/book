@@ -42,12 +42,28 @@ class Assets {
   /// assets/images/book_icon.png
   static const String assetsImagesBookIcon = "assets/images/book_icon.png";
 
+  /// Assets for assetsImagesBookmark
+  /// assets/images/Bookmark.svg
+  static const String assetsImagesBookmark = "assets/images/Bookmark.svg";
+
   /// Assets for assetsImagesMainBook
   /// assets/images/main_book.png
   static const String assetsImagesMainBook = "assets/images/main_book.png";
 
+  /// Assets for assetsImagesPeople
+  /// assets/images/People.svg
+  static const String assetsImagesPeople = "assets/images/People.svg";
+
+  /// Assets for assetsImagesSafari
+  /// assets/images/Safari.svg
+  static const String assetsImagesSafari = "assets/images/Safari.svg";
+
   /// Assets for assetsImagesSearch
   /// assets/images/Search.svg
   static const String assetsImagesSearch = "assets/images/Search.svg";
+
+  /// Assets for assetsImagesUser
+  /// assets/images/User.svg
+  static const String assetsImagesUser = "assets/images/User.svg";
 }
 

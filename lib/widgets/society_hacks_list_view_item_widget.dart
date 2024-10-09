@@ -19,14 +19,21 @@ class SocietyHacksListViewItemWidget extends StatelessWidget {
         Image.asset(
           bookModel.image,
         ),
+        const Expanded(
+          child: SizedBox(),
+        ),
         Text(
           bookModel.title,
           maxLines: 2,
           style: AppStyles.style14SemiBold(
             context,
             color: AppColors.textColor,
+            height: 1.05,
           ),
           overflow: TextOverflow.ellipsis,
+        ),
+        const SizedBox(
+          height: 2,
         ),
         Text(
           bookModel.author,
