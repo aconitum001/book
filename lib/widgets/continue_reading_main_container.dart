@@ -47,7 +47,7 @@ class ContinueReadingMainContainer extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 2,
+                    height: 4,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(

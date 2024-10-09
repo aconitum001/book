@@ -91,12 +91,17 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style24SemiBold(BuildContext context, {Color? color}) {
+  static TextStyle style24SemiBold(
+    BuildContext context, {
+    Color? color,
+    double? height,
+  }) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 24, context: context),
       color: color,
       fontWeight: FontWeight.w600, // Semi-bold
       fontFamily: 'Rubik',
+      height: height,
     );
   }
 
@@ -123,6 +128,15 @@ abstract class AppStyles {
   static TextStyle style13Regular(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 13, context: context),
+      color: color,
+      fontWeight: FontWeight.w400, // Regular
+      fontFamily: 'Rubik',
+    );
+  }
+
+  static TextStyle style12Regular(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 12, context: context),
       color: color,
       fontWeight: FontWeight.w400, // Regular
       fontFamily: 'Rubik',
