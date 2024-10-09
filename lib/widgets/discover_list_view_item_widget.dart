@@ -1,6 +1,6 @@
 import 'package:books/models/book_model.dart';
 import 'package:books/utils/app_colors.dart';
-import 'package:books/utils/assets.dart';
+
 import 'package:flutter/material.dart';
 
 class DiscoverListViewItemWidget extends StatelessWidget {
@@ -19,8 +19,16 @@ class DiscoverListViewItemWidget extends StatelessWidget {
           color: AppColors.primaryColor,
         ),
       ),
-      child: Image.asset(
-        bookModel.image,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(26),
+          image: DecorationImage(
+            image: AssetImage(
+              bookModel.image,
+            ),
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
     );
   }

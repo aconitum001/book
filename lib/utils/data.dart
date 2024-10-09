@@ -3,21 +3,6 @@ import 'package:books/utils/assets.dart';
 
 List<BookModel> books = [
   const BookModel(
-    title: "13 Things Mentally Strong People Don't Do",
-    author: "Amy Morin",
-    image: Assets.assetsImagesBook7,
-    time: 7,
-    chapters: 5,
-    insights: 4,
-    objectives: [
-      "Understand how your feelings affects you",
-      "How to take back your energies",
-      "How to build a better you, day after day",
-    ],
-    description:
-        "Atlas of the Heart (2021) is a guide to understanding your emotions and learning how to regulate them. Everyone experiences strong emotions, but most people can't identify what it is they're feeling, or work out where the feelings come from. Developing your emotional vocabulary will transform your relationship to yourself, and the people around you.",
-  ),
-  const BookModel(
     title: "The Miracle Morning",
     author: "Hal Elrod",
     image: Assets.assetsImagesBook1, // Add image path here
@@ -49,7 +34,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "The Mind and the Brain",
-    author: "Jeffrey M. Schwartz, Sharon Begley",
+    author: "Jeffrey M. Schwartz",
     image: Assets.assetsImagesBook3, // Add image path here
     time: 9,
     chapters: 10,
@@ -85,7 +70,7 @@ List<BookModel> books = [
     chapters: 10,
     insights: 4,
     objectives: [
-      "Find clarity in your life’s purpose",
+      "Find clarity in your life's purpose",
       "Discover actionable steps for personal fulfillment",
       "Learn wisdom from thought leaders",
     ],
@@ -108,6 +93,21 @@ List<BookModel> books = [
         "This book teaches techniques for making strong first impressions and quickly forming meaningful connections with others, both personally and professionally.",
   ),
   const BookModel(
+    title: "13 Things Mentally Strong People Don't Do",
+    author: "Amy Morin",
+    image: Assets.assetsImagesBook7,
+    time: 7,
+    chapters: 5,
+    insights: 4,
+    objectives: [
+      "Understand how your feelings affects you",
+      "How to take back your energies",
+      "How to build a better you, day after day",
+    ],
+    description:
+        "Atlas of the Heart (2021) is a guide to understanding your emotions and learning how to regulate them. Everyone experiences strong emotions, but most people can't identify what it is they're feeling, or work out where the feelings come from. Developing your emotional vocabulary will transform your relationship to yourself, and the people around you.",
+  ),
+  const BookModel(
     title: "Emotional Intelligence",
     author: "Daniel Goleman",
     image: Assets.assetsImagesBook8, // Add image path here
@@ -123,3 +123,6 @@ List<BookModel> books = [
         "Emotional Intelligence explains the importance of emotional intelligence in both personal and professional life. It covers how EQ can be a better predictor of success than IQ.",
   ),
 ];
+
+List<BookModel> discoveryList = books.getRange(0, 4).toList();
+List<BookModel> societyHacksList = books.getRange(4, 8).toList();

@@ -37,6 +37,24 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle style14Medium(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 14, context: context),
+      color: color,
+      fontWeight: FontWeight.w500, // Medium
+      fontFamily: 'Rubik',
+    );
+  }
+
+  static TextStyle style16Medium(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 16, context: context),
+      color: color,
+      fontWeight: FontWeight.w500, // Medium
+      fontFamily: 'Rubik',
+    );
+  }
+
   static TextStyle style17SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 17, context: context),
@@ -88,6 +106,17 @@ abstract class AppStyles {
       color: color,
       fontWeight: FontWeight.w600, // Semi-bold
       fontFamily: 'Rubik',
+    );
+  }
+
+  static TextStyle style18Medium(BuildContext context,
+      {Color? color, double? height}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 18, context: context),
+      color: color,
+      fontWeight: FontWeight.w500, // Semi-bold
+      fontFamily: 'Rubik',
+      height: height,
     );
   }
 

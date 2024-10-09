@@ -1,8 +1,16 @@
 import 'package:books/utils/app_router.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Books());
+  runApp(
+    DevicePreview(
+      enabled: false,
+      builder: (context) {
+        return const Books();
+      },
+    ),
+  );
 }
 
 class Books extends StatelessWidget {
@@ -12,6 +20,8 @@ class Books extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: AppRouter.router,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
     );
   }

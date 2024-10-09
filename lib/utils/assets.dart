@@ -38,6 +38,10 @@ class Assets {
   /// assets/images/book8.png
   static const String assetsImagesBook8 = "assets/images/book8.png";
 
+  /// Assets for assetsImagesBookIcon
+  /// assets/images/book_icon.png
+  static const String assetsImagesBookIcon = "assets/images/book_icon.png";
+
   /// Assets for assetsImagesMainBook
   /// assets/images/main_book.png
   static const String assetsImagesMainBook = "assets/images/main_book.png";
