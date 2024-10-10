@@ -38,12 +38,15 @@ class BookDeatilsHeader extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: BookDetailsHederAppBar(),
           ),
-          Transform.translate(
-            offset: const Offset(0, 30), // Move the image up by 20 pixels
-            child: Transform.scale(
-              scale: 1.5, // Scale the image by 1.2 times
-              child: Image.asset(
-                bookModel.image,
+          Hero(
+            tag: "books-tag-${bookModel.id}",
+            child: Transform.translate(
+              offset: const Offset(0, 30), // Move the image up by 20 pixels
+              child: Transform.scale(
+                scale: 1.5, // Scale the image by 1.2 times
+                child: Image.asset(
+                  bookModel.image,
+                ),
               ),
             ),
           ),

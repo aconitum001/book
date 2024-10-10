@@ -16,8 +16,12 @@ class SocietyHacksListViewItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(
-          bookModel.image,
+        Hero(
+          tag: "books-tag-${bookModel.id}",
+          
+          child: Image.asset(
+            bookModel.image,
+          ),
         ),
         const SizedBox(
           height: 12,

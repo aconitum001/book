@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 List<BookModel> books = [
   const BookModel(
     title: "The Miracle Morning",
+    id: 0,
     author: "Hal Elrod",
     image: Assets.assetsImagesBook1, // Add image path here
     time: 6,
@@ -20,6 +21,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "Unf*ck Yourself",
+    id: 1,
     author: "Gary John Bishop",
     image: Assets.assetsImagesBook2, // Add image path here
     time: 5,
@@ -35,6 +37,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "The Mind and the Brain",
+    id: 2,
     author: "Jeffrey M. Schwartz",
     image: Assets.assetsImagesMainBook, // Add image path here
     time: 9,
@@ -51,6 +54,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "Food: WTF Should I Eat?",
+    id: 3,
     author: "Mark Hyman",
     image: Assets.assetsImagesBook4, // Add image path here
     time: 8,
@@ -66,6 +70,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "The Path Made Clear",
+    id: 4,
     author: "Oprah Winfrey",
     image: Assets.assetsImagesBook5, // Add image path here
     backgroundColor: Color(0xffF1D2C1),
@@ -82,6 +87,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "How to Make People Like You in 90 Seconds or Less",
+    id: 5,
     author: "Nicholas Boothman",
     image: Assets.assetsImagesBook6, // Add image path here
     backgroundColor: Color(0xffA0A0A0),
@@ -98,6 +104,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "13 Things Mentally Strong People Don't Do",
+    id: 6,
     author: "Amy Morin",
     image: Assets.assetsImagesBook7,
     time: 7,
@@ -113,6 +120,7 @@ List<BookModel> books = [
   ),
   const BookModel(
     title: "Emotional Intelligence",
+    id: 7,
     author: "Daniel Goleman",
     image: Assets.assetsImagesBook8, // Add image path here
     backgroundColor: Color(0xffFFF5E3),

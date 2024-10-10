@@ -27,14 +27,17 @@ class ContinueReadingWidget extends StatelessWidget {
         Positioned(
           top: -22,
           left: width * 0.08,
-          child: Transform(
-            transform: Matrix4.identity()
-              ..rotateZ(0.1)
-              ..scale(
-                1 + scaleFactor,
+          child: Hero(
+            tag: "books-tag-${books[2].id}",
+            child: Transform(
+              transform: Matrix4.identity()
+                ..rotateZ(0.1)
+                ..scale(
+                  1 + scaleFactor,
+                ),
+              child: Image.asset(
+                Assets.assetsImagesComplitionImage,
               ),
-            child: Image.asset(
-              Assets.assetsImagesComplitionImage,
             ),
           ),
         ),
