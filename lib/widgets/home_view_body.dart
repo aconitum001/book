@@ -51,6 +51,9 @@ class HomeViewBody extends StatelessWidget {
             height: 21,
           ),
           const SocietyHacksSection(),
+          const SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
