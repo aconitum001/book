@@ -11,9 +11,8 @@ class ContinueReadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.sizeOf(context).width;
 
-    // Calculate a responsive scale factor based on the screen width
     double scaleFactor =
-        width * 0.0002; // Adjust this value to achieve your desired effect
+        width * 0.0002; 
 
     return Stack(
       clipBehavior: Clip.none,

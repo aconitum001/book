@@ -19,8 +19,8 @@ class SocietyHacksListViewItemWidget extends StatelessWidget {
         Image.asset(
           bookModel.image,
         ),
-        const Expanded(
-          child: SizedBox(),
+        const SizedBox(
+          height: 12,
         ),
         Text(
           bookModel.title,

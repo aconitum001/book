@@ -1,6 +1,8 @@
+import 'package:books/utils/app_router.dart';
 import 'package:books/utils/data.dart';
 import 'package:books/widgets/society_hacks_list_view_item_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SocietyHacksListView extends StatelessWidget {
   const SocietyHacksListView({super.key});
@@ -23,8 +25,16 @@ class SocietyHacksListView extends StatelessWidget {
             left: index == 0 ? 16 : 0,
             right: index == societyHacksList.length - 1 ? 16 : 0,
           ),
-          child: SocietyHacksListViewItemWidget(
-            bookModel: societyHacksList[index],
+          child: GestureDetector(
+            onTap: () {
+              GoRouter.of(context).push(
+                AppRouter.bookDetailsView,
+                extra: societyHacksList[index],
+              );
+            },
+            child: SocietyHacksListViewItemWidget(
+              bookModel: societyHacksList[index],
+            ),
           ),
         ),
       ),

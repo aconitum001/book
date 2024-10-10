@@ -2,9 +2,17 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesBackgroundDetails
+  /// assets/images/background_details.png
+  static const String assetsImagesBackgroundDetails = "assets/images/background_details.png";
+
   /// Assets for assetsImagesBell
   /// assets/images/Bell.svg
   static const String assetsImagesBell = "assets/images/Bell.svg";
+
+  /// Assets for assetsImagesBook
+  /// assets/images/book.png
+  static const String assetsImagesBook = "assets/images/book.png";
 
   /// Assets for assetsImagesBook1
   /// assets/images/book1.png
@@ -42,9 +50,17 @@ class Assets {
   /// assets/images/book_icon.png
   static const String assetsImagesBookIcon = "assets/images/book_icon.png";
 
+  /// Assets for assetsImagesBookMarkIcon
+  /// assets/images/book_mark_icon.svg
+  static const String assetsImagesBookMarkIcon = "assets/images/book_mark_icon.svg";
+
   /// Assets for assetsImagesBookmark
   /// assets/images/Bookmark.svg
   static const String assetsImagesBookmark = "assets/images/Bookmark.svg";
+
+  /// Assets for assetsImagesInsight
+  /// assets/images/insight.png
+  static const String assetsImagesInsight = "assets/images/insight.png";
 
   /// Assets for assetsImagesMainBook
   /// assets/images/main_book.png
@@ -61,6 +77,14 @@ class Assets {
   /// Assets for assetsImagesSearch
   /// assets/images/Search.svg
   static const String assetsImagesSearch = "assets/images/Search.svg";
+
+  /// Assets for assetsImagesShare
+  /// assets/images/Share.svg
+  static const String assetsImagesShare = "assets/images/Share.svg";
+
+  /// Assets for assetsImagesTime
+  /// assets/images/time.png
+  static const String assetsImagesTime = "assets/images/time.png";
 
   /// Assets for assetsImagesUser
   /// assets/images/User.svg

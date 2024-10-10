@@ -10,6 +10,7 @@ class Tapper extends StatelessWidget {
   final BorderRadiusGeometry? borderRadius;
   final Color? backgroundColor;
   final Color? rippleColor;
+  final ShapeBorder? shape;
 
   const Tapper({
     required this.child,
@@ -18,6 +19,7 @@ class Tapper extends StatelessWidget {
     this.backgroundColor,
     this.rippleColor,
     super.key,
+    this.shape,
   });
 
   @override
@@ -27,6 +29,7 @@ class Tapper extends StatelessWidget {
       child: Material(
         color: backgroundColor ?? Colors.transparent,
         child: InkWell(
+          customBorder: shape,
           splashColor: rippleColor ?? Theme.of(context).primaryColorLight,
           onTap: onTap,
           child: child,
