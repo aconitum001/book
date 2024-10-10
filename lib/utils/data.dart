@@ -1,5 +1,6 @@
 import 'package:books/models/book_model.dart';
 import 'package:books/utils/assets.dart';
+import 'package:flutter/material.dart';
 
 List<BookModel> books = [
   const BookModel(
@@ -35,8 +36,9 @@ List<BookModel> books = [
   const BookModel(
     title: "The Mind and the Brain",
     author: "Jeffrey M. Schwartz",
-    image: Assets.assetsImagesBook3, // Add image path here
+    image: Assets.assetsImagesMainBook, // Add image path here
     time: 9,
+    backgroundColor: Color(0xffB3BDD9),
     chapters: 10,
     insights: 6,
     objectives: [
@@ -66,6 +68,7 @@ List<BookModel> books = [
     title: "The Path Made Clear",
     author: "Oprah Winfrey",
     image: Assets.assetsImagesBook5, // Add image path here
+    backgroundColor: Color(0xffF1D2C1),
     time: 6,
     chapters: 10,
     insights: 4,
@@ -81,6 +84,7 @@ List<BookModel> books = [
     title: "How to Make People Like You in 90 Seconds or Less",
     author: "Nicholas Boothman",
     image: Assets.assetsImagesBook6, // Add image path here
+    backgroundColor: Color(0xffA0A0A0),
     time: 3,
     chapters: 4,
     insights: 2,
@@ -111,6 +115,7 @@ List<BookModel> books = [
     title: "Emotional Intelligence",
     author: "Daniel Goleman",
     image: Assets.assetsImagesBook8, // Add image path here
+    backgroundColor: Color(0xffFFF5E3),
     time: 7,
     chapters: 8,
     insights: 5,

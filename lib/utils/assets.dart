@@ -58,6 +58,10 @@ class Assets {
   /// assets/images/Bookmark.svg
   static const String assetsImagesBookmark = "assets/images/Bookmark.svg";
 
+  /// Assets for assetsImagesComplitionImage
+  /// assets/images/complition_image.png
+  static const String assetsImagesComplitionImage = "assets/images/complition_image.png";
+
   /// Assets for assetsImagesImage
   /// assets/images/Image.png
   static const String assetsImagesImage = "assets/images/Image.png";

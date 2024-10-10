@@ -11,8 +11,7 @@ class ContinueReadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.sizeOf(context).width;
 
-    double scaleFactor =
-        width * 0.0002; 
+    double scaleFactor = width * 0.0002;
 
     return Stack(
       clipBehavior: Clip.none,
@@ -35,7 +34,7 @@ class ContinueReadingWidget extends StatelessWidget {
                 1 + scaleFactor,
               ),
             child: Image.asset(
-              Assets.assetsImagesMainBook,
+              Assets.assetsImagesComplitionImage,
             ),
           ),
         ),

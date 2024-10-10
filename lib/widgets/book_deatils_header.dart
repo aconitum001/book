@@ -16,13 +16,18 @@ class BookDeatilsHeader extends StatelessWidget {
       clipBehavior: Clip.none,
       width: width,
       height: 337,
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-            Assets.assetsImagesBackgroundDetails,
-          ),
-          fit: BoxFit.fill,
-        ),
+      decoration: BoxDecoration(
+        color: bookModel.title == "13 Things Mentally Strong People Don't Do"
+            ? null
+            : bookModel.backgroundColor,
+        image: bookModel.title == "13 Things Mentally Strong People Don't Do"
+            ? const DecorationImage(
+                image: AssetImage(
+                  Assets.assetsImagesBackgroundDetails,
+                ),
+                fit: BoxFit.fill,
+              )
+            : null,
       ),
       child: Column(
         children: [

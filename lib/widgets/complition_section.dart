@@ -1,8 +1,11 @@
 import 'package:books/utils/app_colors.dart';
+import 'package:books/utils/app_router.dart';
 import 'package:books/utils/app_styles.dart';
 import 'package:books/utils/assets.dart';
+import 'package:books/utils/data.dart';
 import 'package:books/widgets/continue_reading_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ComplitionSection extends StatelessWidget {
   const ComplitionSection({
@@ -29,7 +32,15 @@ class ComplitionSection extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        const ContinueReadingWidget(),
+        GestureDetector(
+          onTap: () {
+            GoRouter.of(context).push(
+              AppRouter.bookDetailsView,
+              extra: discoveryList[2],
+            );
+          },
+          child: const ContinueReadingWidget(),
+        ),
         const SizedBox(
           height: 18,
         ),

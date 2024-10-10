@@ -1,5 +1,6 @@
 import 'package:books/models/book_model.dart';
 import 'package:books/utils/app_colors.dart';
+import 'package:books/utils/assets.dart';
 
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,9 @@ class DiscoverListViewItemWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(26),
           image: DecorationImage(
             image: AssetImage(
-              bookModel.image,
+              bookModel.title == "The Mind and the Brain"
+                  ? Assets.assetsImagesBook3
+                  : bookModel.image,
             ),
             fit: BoxFit.fill,
           ),
