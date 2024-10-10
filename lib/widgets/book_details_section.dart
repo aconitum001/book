@@ -1,8 +1,8 @@
 import 'package:books/models/book_model.dart';
 import 'package:books/utils/app_colors.dart';
 import 'package:books/utils/app_styles.dart';
-import 'package:books/utils/assets.dart';
-import 'package:books/widgets/tags_widget.dart';
+import 'package:books/widgets/book_details_tags.dart';
+import 'package:books/widgets/objective_section.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsSection extends StatelessWidget {
@@ -40,36 +40,46 @@ class BookDetailsSection extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          Row(
-            children: [
-              Expanded(
-                flex: 2,
-                child: TagsWidget(
-                  title: "${bookModel.time} min",
-                  image: Assets.assetsImagesTime,
-                ),
-              ),
-              const SizedBox(
-                width: 12,
-              ),
-              Expanded(
-                flex: 3,
-                child: TagsWidget(
-                  title: "${bookModel.chapters} chapters",
-                  image: Assets.assetsImagesBook,
-                ),
-              ),
-              const SizedBox(
-                width: 12,
-              ),
-              Expanded(
-                flex: 3,
-                child: TagsWidget(
-                  title: "${bookModel.insights} insights",
-                  image: Assets.assetsImagesInsight,
-                ),
-              ),
-            ],
+          BookDetailsTags(bookModel: bookModel),
+          const SizedBox(
+            height: 24,
+          ),
+          const Divider(
+            color: AppColors.greyColor,
+            height: 0,
+          ),
+          const SizedBox(
+            height: 19,
+          ),
+          ObjectiveSection(
+            bookModel: bookModel,
+          ),
+          const SizedBox(
+            height: 17,
+          ),
+          const Divider(
+            color: AppColors.greyColor,
+            height: 0,
+          ),
+          const SizedBox(
+            height: 19,
+          ),
+          Text(
+            "What's it about?",
+            style: AppStyles.style18SemiBold(
+              context,
+              color: AppColors.textColor,
+            ),
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          Text(
+            bookModel.description,
+            style: AppStyles.style13Regular(
+              context,
+              color: AppColors.textColor,
+            ),
           )
         ],
       ),

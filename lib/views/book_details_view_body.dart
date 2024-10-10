@@ -14,15 +14,20 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        BookDeatilsHeader(bookModel: bookModel),
-        const SizedBox(
-          height: 50,
-        ),
-        BookDetailsSection(bookModel: bookModel),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          BookDeatilsHeader(bookModel: bookModel),
+          const SizedBox(
+            height: 50,
+          ),
+          BookDetailsSection(bookModel: bookModel),
+          const SizedBox(
+            height: 20,
+          ),
+        ],
+      ),
     );
   }
 }
