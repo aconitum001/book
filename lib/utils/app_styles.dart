@@ -33,6 +33,20 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle style36SemiBold(
+    BuildContext context, {
+    Color? color,
+    double? height,
+  }) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 36, context: context),
+      color: color,
+      fontWeight: FontWeight.w600, // Semi-bold
+      fontFamily: 'Rubik',
+      height: height,
+    );
+  }
+
   static TextStyle style15Medium(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 15, context: context),
@@ -51,12 +65,14 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle style16Medium(BuildContext context, {Color? color}) {
+  static TextStyle style16Medium(BuildContext context,
+      {Color? color, double? height}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 16, context: context),
       color: color,
       fontWeight: FontWeight.w500, // Medium
       fontFamily: 'Rubik',
+      height: 1,
     );
   }
 
@@ -87,9 +103,27 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle style18Regular(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 18, context: context),
+      color: color,
+      fontWeight: FontWeight.w400, // Regular
+      fontFamily: 'Rubik',
+    );
+  }
+
   static TextStyle style20SemiBold(BuildContext context, {Color? color}) {
     return TextStyle(
       fontSize: getResponsiveFontSize(fontsize: 20, context: context),
+      color: color,
+      fontWeight: FontWeight.w600, // Semi-bold
+      fontFamily: 'Rubik',
+    );
+  }
+
+  static TextStyle style22SemiBold(BuildContext context, {Color? color}) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(fontsize: 22, context: context),
       color: color,
       fontWeight: FontWeight.w600, // Semi-bold
       fontFamily: 'Rubik',

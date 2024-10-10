@@ -1,8 +1,10 @@
 import 'package:books/models/book_model.dart';
+import 'package:books/utils/app_router.dart';
 import 'package:books/utils/assets.dart';
 import 'package:books/widgets/book_details_header_app_bar.dart';
 import 'package:books/widgets/custom_botton.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BookDeatilsHeader extends StatelessWidget {
   const BookDeatilsHeader({super.key, required this.bookModel});
@@ -56,7 +58,9 @@ class BookDeatilsHeader extends StatelessWidget {
               height: 56,
               width: MediaQuery.sizeOf(context).width * 0.5,
               child: CustomButton(
-                onTap: () {},
+                onTap: () {
+                  GoRouter.of(context).push(AppRouter.buyBookView);
+                },
               ),
             ),
           )
