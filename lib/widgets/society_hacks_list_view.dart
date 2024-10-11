@@ -9,20 +9,19 @@ class SocietyHacksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
+    return ListView.builder(
       itemCount: societyHacksList.length,
       scrollDirection: Axis.horizontal,
       physics: const BouncingScrollPhysics(),
-      separatorBuilder: (context, index) => const SizedBox(
-        width: 16,
-      ),
       itemBuilder: (context, index) => SizedBox(
-        width: index == 0 || index == societyHacksList.length - 1
-            ? MediaQuery.sizeOf(context).width * 0.297
-            : MediaQuery.sizeOf(context).width * 0.255,
+        width: index == societyHacksList.length - 1
+            ? 115 + 18
+            : index == 0
+                ? 115 + 8
+                : 115,
         child: Padding(
           padding: EdgeInsets.only(
-            left: index == 0 ? 16 : 0,
+            left: index == 0 ? 16 : 10,
             right: index == societyHacksList.length - 1 ? 16 : 0,
           ),
           child: GestureDetector(
