@@ -18,9 +18,11 @@ class SocietyHacksListViewItemWidget extends StatelessWidget {
       children: [
         Hero(
           tag: "books-tag-${bookModel.id}",
-          
-          child: Image.asset(
-            bookModel.image,
+          child: Material(
+            color: Colors.transparent,
+            child: Image.asset(
+              bookModel.image,
+            ),
           ),
         ),
         const SizedBox(
